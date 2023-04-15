@@ -5,4 +5,4 @@ Assignment consists of
 2) stata code, which utilizes publicly available data on countries' macroeconomic indicators. 
 
 ## Stata 
-Stat code is divided into four subcomponents; these are ordered in the main.do file. 
+Stata code is divided into four subcomponents; these are ordered in the main.do file. 

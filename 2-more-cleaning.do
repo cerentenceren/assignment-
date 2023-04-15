@@ -18,4 +18,5 @@ rename unemploymentrate unemployment
 rename publicdebtofgdp public_debt
 rename lifeexpectancyatbirthyears life_expectancy
 
+*save data*
 save "data/derived/countries.dta", replace

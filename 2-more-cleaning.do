@@ -1,0 +1,21 @@
+
+*more data cleaning, destringing some variables and dropping more variables* 
+
+destring size, force replace
+browse
+destring birth_rate, force replace
+destring curren_account_balance, force replace
+destring death_rate, force replace
+destring external_debt, force replace
+destring electricity_cons electricity_prod exports gdp gdp_pc gdp_realgrowthrate highwayskm imports industrialproductiongrowthrate infantmortalityratedeaths1000liv inflationrateconsumerprices, force replace
+rename inflationrateconsumerprices inflation
+rename industrialproductiongrowthrate industrial_prod_growth
+drop internethosts internetusers laborforce investmentgrossfixedofgdp militaryexpendituresdollarfigure militaryexpenditurespercentofgdp naturalgasconsumptioncum naturalgasexportscum naturalgasimportscum naturalgasproductioncum naturalgasprovedreservescum oilconsumptionbblday oilexportsbblday oilimportsbblday oilproductionbblday oilprovedreservesbbl
+rename highwayskm highways_km
+destring highways_km, force replace
+drop reservesofforeignexchangegold totalfertilityratechildrenbornwo
+rename unemploymentrate unemployment
+rename publicdebtofgdp public_debt
+rename lifeexpectancyatbirthyears life_expectancy
+
+save "data/derived/countries.dta", replace
